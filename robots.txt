@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dev-knt.github.io/remo-site/sitemap.xml
