@@ -71,6 +71,10 @@ b { font-weight: 700; }
 .chip:hover { border-color: var(--primary-soft-line); background: var(--primary-soft); }
 .chip.is-selected { border-color: var(--primary); background: var(--primary-soft); color: var(--primary-dark); font-weight: 700; }
 .chip--soon { color: var(--muted); }
+/* «Срочно» (signal orange, same as the app's urgent tokens) */
+.chip--urgent { color: #9A3A06; }
+.chip--urgent:hover { border-color: #FFD8A8; background: #FFF4E6; }
+.chip--urgent.is-selected { border-color: #D9480F; background: #FFF4E6; color: #9A3A06; }
 .chip--soon small { font-size: 10.5px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--new-fg); background: var(--new-bg); padding: 2px 6px; border-radius: 999px; }
 .chip--flex { flex: 1 1 0; border-radius: 10px; padding: 0 6px; }
 textarea, input[type="tel"] { width: 100%; padding: 12px; border: 1.5px solid var(--line); border-radius: var(--r-md); background: var(--surface); font-size: 16px; line-height: 1.35; outline: none; transition: border-color .15s var(--ease), box-shadow .15s var(--ease); }
@@ -153,6 +157,8 @@ a.tile:hover { transform: translateY(-2px); box-shadow: var(--e2); color: var(--
 .tile__icon--green { background: var(--verified-bg); color: var(--verified-fg); }
 .tile__icon--amber { background: var(--new-bg); color: var(--new-fg); }
 .tile__icon--slate { background: var(--ghost); color: var(--slate); }
+.tile__icon--rose { background: #FDECF1; color: #B8285A; }
+.tile__icon--lime { background: #EEF6E3; color: #4D7C0F; }
 .tile--soon { background: var(--bg); border-style: dashed; color: var(--faint); box-shadow: none; }
 .tile--soon .soon { font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--faint); }
 @media (min-width: 720px) { .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; } }
@@ -188,6 +194,8 @@ a.tile:hover { transform: translateY(-2px); box-shadow: var(--e2); color: var(--
 .sticky .btn--primary { flex: 1; min-height: 52px; }
 .sticky.is-visible { transform: translateY(0); }
 .sticky[hidden] { display: none; }
+/* component display rules (.success is flex) must never beat the hidden attribute */
+[hidden] { display: none !important; }
 @media (min-width: 960px) { .sticky { display: none !important; } }
 
 /* Legal pages */

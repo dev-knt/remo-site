@@ -5,8 +5,7 @@ window.REMO_CONFIG = {
   supabaseUrl: 'https://rtztjvphbregxfclzivz.supabase.co',
   supabaseKey: 'sb_publishable_YS1OvcNZPG2AMC5fWNqcIw_NWRtxD6Q',
   // WhatsApp number for the «Написать в WhatsApp» buttons, digits only with country code.
-  // TODO(founder): replace with the real Remo number (docs/FOUNDER-TODO.md).
-  whatsapp: '996000000000',
+  whatsapp: '996551868676',
   supportEmail: 'support@remo.kg',
   // Storage bucket for the photos attached to a request (private, anon insert only).
   photoBucket: 'web-requests',

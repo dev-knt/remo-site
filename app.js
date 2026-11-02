@@ -32,6 +32,15 @@
     return sb;
   }
 
+  // Description example follows the picked category.
+  const PLACEHOLDERS = {
+    ac: 'Например: сплит не холодит, капает вода из внутреннего блока',
+    appliance: 'Например: холодильник не морозит, гудит компрессор',
+    locks: 'Например: захлопнулась входная дверь, ключи внутри. 5-й этаж',
+    'auto-electric': 'Например: Toyota Camry не заводится, щелкает стартер. Стою у дома',
+    other: 'Опишите, что нужно сделать',
+  };
+
   // ---- Category chips ----
   const catChips = $$('#category-chips .chip');
   function selectCategory(chip) {
@@ -42,6 +51,8 @@
     state.category = chip.dataset.category || '';
     state.service = chip.dataset.service || '';
     state.label = chip.dataset.label || '';
+    const desc = $('#description');
+    if (desc) desc.placeholder = PLACEHOLDERS[state.category] || PLACEHOLDERS.ac;
     updateWhatsAppLinks();
   }
   catChips.forEach((c) => {
@@ -66,6 +77,9 @@
       state.time = c.dataset.time || '';
     });
   });
+  // Urgent landings (locks / auto-electric) preselect «Срочно».
+  const preTime = timeChips.find((c) => c.dataset.time === body.dataset.time);
+  if (preTime) preTime.click();
 
   // ---- Phone: keep +996 and format as +996 XXX XXX XXX ----
   const phone = $('#phone');

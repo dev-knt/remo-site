@@ -21,9 +21,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Remo","url":"https://dev-knt.github.io/remo-site/","image":"https://dev-knt.github.io/remo-site/img/og.png","description":"Мастер по холодильникам приедет сегодня. Диагностика 350 сом, ремонт от 500. Цена согласуется до начала работы. Проверенные мастера.","areaServed":{"@type":"City","name":"Бишкек"},"priceRange":"сом","email":"support@remo.kg","openingHours":"Mo-Su 09:00-21:00"},{"@context":"https://schema.org","@type":"Service","name":"Ремонт холодильников","provider":{"@type":"Organization","name":"Remo"},"areaServed":{"@type":"City","name":"Бишкек"},"url":"https://dev-knt.github.io/remo-site/remont-kholodilnikov.html"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько стоит заявка?","acceptedAnswer":{"@type":"Answer","text":"Для клиентов Remo бесплатен. Вы платите только мастеру за работу — напрямую, после её выполнения."}},{"@type":"Question","name":"Кто приедет?","acceptedAnswer":{"@type":"Answer","text":"Только проверенные мастера: паспорт и навыки подтверждены, отзывы оставляют клиенты после реальных работ."}},{"@type":"Question","name":"Как быстро ответят?","acceptedAnswer":{"@type":"Answer","text":"Обычно в течение 15 минут в рабочее время (9:00–21:00). До 4 мастеров пришлют цену и время визита."}},{"@type":"Question","name":"Цена точно не изменится на месте?","acceptedAnswer":{"@type":"Answer","text":"Мастер называет цену до начала работы. Если при диагностике объём меняется, новая цена согласуется с вами до продолжения работ."}}]}]</script>
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Remo","url":"https://dev-knt.github.io/remo-site/","image":"https://dev-knt.github.io/remo-site/img/og.png","description":"Мастер по холодильникам приедет сегодня. Диагностика 350 сом, ремонт от 500. Цена согласуется до начала работы. Проверенные мастера.","areaServed":{"@type":"City","name":"Бишкек"},"priceRange":"сом","email":"support@remo.kg","openingHours":"Mo-Su 09:00-21:00"},{"@context":"https://schema.org","@type":"Service","name":"Ремонт холодильников","provider":{"@type":"Organization","name":"Remo"},"areaServed":{"@type":"City","name":"Бишкек"},"url":"https://dev-knt.github.io/remo-site/remont-kholodilnikov.html"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Сколько стоит заявка?","acceptedAnswer":{"@type":"Answer","text":"Для клиентов Remo бесплатен. Вы платите только мастеру за работу — напрямую, после её выполнения."}},{"@type":"Question","name":"Кто приедет?","acceptedAnswer":{"@type":"Answer","text":"Только проверенные мастера: паспорт и навыки подтверждены, отзывы оставляют клиенты после реальных работ."}},{"@type":"Question","name":"Как быстро ответят?","acceptedAnswer":{"@type":"Answer","text":"Обычно в течение 15 минут в рабочее время (9:00–21:00). До 5 мастеров пришлют цену и время визита."}},{"@type":"Question","name":"Цена точно не изменится на месте?","acceptedAnswer":{"@type":"Answer","text":"Мастер называет цену до начала работы. Если при диагностике объём меняется, новая цена согласуется с вами до продолжения работ."}}]}]</script>
 </head>
-<body data-page="/remont-kholodilnikov" data-category="appliance" data-service="appliance-fridge">
+<body data-page="/remont-kholodilnikov" data-category="appliance" data-service="appliance-fridge" data-time="">
 
 <header class="topbar">
   <div class="container topbar__inner">
@@ -57,7 +57,7 @@
         </ul>
         <ol class="steps steps--hero" id="how-desktop" aria-label="Три шага">
           <li><span class="steps__n">1</span><b>Фото и пара слов</b><span>Одна минута, без регистрации.</span></li>
-          <li><span class="steps__n">2</span><b>До 4 цен</b><span>Мастера района отвечают ценой и временем.</span></li>
+          <li><span class="steps__n">2</span><b>До 5 мастеров</b><span>Мастера района отвечают ценой и временем.</span></li>
           <li><span class="steps__n">3</span><b>Выезд</b><span>Платите мастеру напрямую после работы.</span></li>
         </ol>
       </div>
@@ -72,6 +72,8 @@
             <button type="button" class="chip" data-category="appliance" data-service="appliance-fridge" data-label="Холодильник">Холодильник</button>
             <button type="button" class="chip" data-category="appliance" data-service="appliance-washer" data-label="Стиральная машина">Стиральная</button>
             <button type="button" class="chip" data-category="appliance" data-service="appliance-other" data-label="Другая техника">Другая техника</button>
+            <button type="button" class="chip" data-category="locks" data-service="" data-label="Вскрытие замков"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.8 12.2 19.5 3.5"/><path d="m16 7 2.5 2.5"/><path d="m13.5 9.5 2 2"/></svg>Вскрытие замков</button>
+            <button type="button" class="chip" data-category="auto-electric" data-service="" data-label="Автоэлектрик"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12.5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4.5Z"/><path d="M5 11.5 7 6.6a1.5 1.5 0 0 1 1.4-1h7.2a1.5 1.5 0 0 1 1.4 1l2 4.9"/><path d="M6 18v2M18 18v2"/></svg>Автоэлектрик</button>
             <button type="button" class="chip chip--soon" data-category="plumbing" data-service="" data-label="Сантехника">Сантехника <small>скоро</small></button>
             <button type="button" class="chip chip--soon" data-category="electrical" data-service="" data-label="Электрика">Электрика <small>скоро</small></button>
             <button type="button" class="chip" data-category="other" data-service="" data-label="Другое">Другое</button>
@@ -100,6 +102,7 @@
         <fieldset class="field">
           <legend class="label">Когда удобно</legend>
           <div class="chips chips--row" id="time-chips" role="radiogroup" aria-label="Время">
+            <button type="button" class="chip chip--flex chip--urgent" data-time="Срочно"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z"/></svg>Срочно</button>
             <button type="button" class="chip chip--flex is-selected" data-time="Сегодня">Сегодня</button>
             <button type="button" class="chip chip--flex" data-time="Завтра">Завтра</button>
             <button type="button" class="chip chip--flex" data-time="Обсужу с мастером">Обсужу</button>
@@ -142,7 +145,7 @@
       <h2 class="h2">Фото → цена → выезд</h2>
       <ol class="steps steps--cards">
         <li><span class="steps__n">1</span><b>Опишите задачу</b><span>Пара слов и фото — этого достаточно. Одна минута, без регистрации.</span></li>
-        <li><span class="steps__n">2</span><b>Сравните до 4 цен</b><span>Проверенные мастера вашего района пришлют цену и время визита.</span></li>
+        <li><span class="steps__n">2</span><b>Сравните до 5 цен</b><span>Проверенные мастера вашего района пришлют цену и время визита.</span></li>
         <li><span class="steps__n">3</span><b>Выберите мастера</b><span>Платите мастеру напрямую после работы. Remo с вас ничего не берёт.</span></li>
       </ol>
     </div>
@@ -150,11 +153,11 @@
 
   <section class="section section--tint" id="compare">
     <div class="container">
-      <h2 class="h2">Не один номер — до 4 мастеров</h2>
+      <h2 class="h2">Не один номер — до 5 мастеров</h2>
       <p class="lead">Звонок по объявлению — это одна цена, названная на месте, и мастер, о котором вы ничего не знаете.</p>
       <div class="table card">
         <div class="table__head"><span></span><span>По объявлению</span><span class="table__remo">Remo</span></div>
-        <div class="table__row"><b>Цена</b><span>одна, на месте</span><span class="ok">до 4, заранее</span></div>
+        <div class="table__row"><b>Цена</b><span>одна, на месте</span><span class="ok">до 5, заранее</span></div>
         <div class="table__row"><b>Мастер</b><span>неизвестно кто</span><span class="ok">паспорт + отзывы</span></div>
         <div class="table__row"><b>Ваш номер</b><span>у всех</span><span class="ok">скрыт до визита</span></div>
         <div class="table__row"><b>Стоимость для вас</b><span>—</span><span class="ok">бесплатно</span></div>
@@ -181,6 +184,14 @@
         <a class="tile card" href="remont-tekhniki.html">
           <span class="tile__icon tile__icon--slate"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0 5 5L14 17l-3-3 5.5-5.5a4 4 0 0 0-5-5l2 2-3 3-2-2a4 4 0 0 0 1 4.5L4 16.5 7.5 20 13 14.5"/></svg></span>
           <b>Другая техника</b><span>бойлеры, плиты, посудомойки</span>
+        </a>
+        <a class="tile card" href="vskrytie-zamkov.html">
+          <span class="tile__icon tile__icon--rose"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.8 12.2 19.5 3.5"/><path d="m16 7 2.5 2.5"/><path d="m13.5 9.5 2 2"/></svg></span>
+          <b>Вскрытие замков</b><span>двери и авто · от 1&nbsp;000</span>
+        </a>
+        <a class="tile card" href="avtoelektrik.html">
+          <span class="tile__icon tile__icon--lime"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12.5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4.5Z"/><path d="M5 11.5 7 6.6a1.5 1.5 0 0 1 1.4-1h7.2a1.5 1.5 0 0 1 1.4 1l2 4.9"/><path d="M6 18v2M18 18v2"/></svg></span>
+          <b>Автоэлектрик</b><span>запуск, аккумулятор · от&nbsp;500</span>
         </a>
         <div class="tile tile--soon card">
           <span class="tile__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6.5 7 6.5 11.5a6.5 6.5 0 0 1-13 0C5.5 10 12 3 12 3Z"/></svg></span>
@@ -219,9 +230,9 @@
       <h2 class="h2">Частые вопросы</h2>
       <details class="faq card"><summary>Сколько стоит заявка?</summary><p>Для клиентов Remo бесплатен. Вы платите только мастеру за работу — напрямую, после её выполнения.</p></details>
       <details class="faq card"><summary>Кто приедет?</summary><p>Только проверенные мастера: паспорт и навыки подтверждены, отзывы оставляют клиенты после реальных работ.</p></details>
-      <details class="faq card"><summary>Как быстро ответят?</summary><p>Обычно в течение 15 минут в рабочее время (9:00–21:00). До 4 мастеров пришлют цену и время визита, вы выбираете.</p></details>
+      <details class="faq card"><summary>Как быстро ответят?</summary><p>Обычно в течение 15 минут в рабочее время (9:00–21:00). До 5 мастеров пришлют цену и время визита, вы выбираете.</p></details>
       <details class="faq card"><summary>Цена точно не изменится на месте?</summary><p>Мастер называет цену до начала работы. Если при диагностике объём меняется, новая цена согласуется с вами до продолжения работ.</p></details>
-      <details class="faq card"><summary>Почему не позвонить по объявлению?</summary><p>Можно. Но там одна цена, названная на месте, и мастер, о котором вы ничего не знаете. У нас — до 4 цен заранее и проверенные люди.</p></details>
+      <details class="faq card"><summary>Почему не позвонить по объявлению?</summary><p>Можно. Но там одна цена, названная на месте, и мастер, о котором вы ничего не знаете. У нас — до 5 цен заранее и проверенные люди.</p></details>
     </div>
   </section>
 
@@ -230,7 +241,7 @@
       <div class="masters">
         <div class="eyebrow eyebrow--onDark">Вы мастер?</div>
         <h2 class="masters__h2">Заявки клиентов вашего района — в приложении Remo. Бета: бесплатно.</h2>
-        <p class="masters__p">Кондиционеры и ремонт техники в Бишкеке. Проверка занимает один день. Мастера, вошедшие в бета-период, получат стартовый баланс при запуске оплаты.</p>
+        <p class="masters__p">Кондиционеры, ремонт техники, вскрытие замков и автоэлектрика в Бишкеке. Проверка занимает один день. Мастера, вошедшие в бета-период, получат стартовый баланс при запуске оплаты.</p>
         <div class="masters__actions">
           <a class="btn btn--white" href="https://expo.dev/accounts/crranbery/projects/remo/builds/87697bf9-37d3-41f9-a779-a1cc011bfa2a" data-store="ios" target="_blank" rel="noopener">iPhone (тест)</a>
           <a class="btn btn--white" href="https://github.com/dev-knt/remo-site/releases/latest/download/remo.apk" data-store="android" rel="noopener">Android (APK)</a>
